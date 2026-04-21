@@ -4,6 +4,7 @@ import { viteMockServe } from 'vite-plugin-mock'
 
 export default defineConfig(({ command }) => {
   return {
+    base: '/xyzy-admin-demo/',
     plugins: [
       vue(),
       viteMockServe({
