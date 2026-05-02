@@ -161,6 +161,11 @@ function switchRole(next: RoleKey) {
 .app-aside {
   border-right: 1px solid var(--el-border-color);
   background: var(--el-bg-color);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
 }
 
 .brand {
@@ -169,6 +174,7 @@ function switchRole(next: RoleKey) {
   align-items: center;
   padding: 0 16px;
   border-bottom: 1px solid var(--el-border-color);
+  flex-shrink: 0;
 }
 
 .brand-title {
@@ -178,6 +184,8 @@ function switchRole(next: RoleKey) {
 
 .app-menu {
   border-right: none;
+  flex: 1;
+  overflow-y: auto;
 }
 
 .app-header {
